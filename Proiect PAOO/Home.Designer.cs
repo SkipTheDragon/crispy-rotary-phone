@@ -313,7 +313,7 @@ namespace Proiect_PAOO
             this.button1Save.Name = "button1Save";
             this.button1Save.Size = new System.Drawing.Size(75, 23);
             this.button1Save.TabIndex = 19;
-            this.button1Save.Text = "Salveaza";
+            this.button1Save.Text = "Salveazaa";
             this.button1Save.UseVisualStyleBackColor = true;
             // 
             // textBoxCostRed
