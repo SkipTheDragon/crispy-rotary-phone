@@ -12,6 +12,7 @@ namespace Proiect_PAOO
 {
     public partial class Home : Form
     {
+        public static DefaultPanel currentPanel;
         public Home()
         {
             InitializeComponent();
@@ -20,7 +21,8 @@ namespace Proiect_PAOO
             comboBoxImMin.SelectedIndex = 0;
             comboBoxNivMin.SelectedIndex = 0;
             comboBoxNivMax.SelectedIndex = 0;
-            comboBoxNivel.SelectedIndex = 0;
+            Home.currentPanel = panelVulnerabilitati;
+
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -32,8 +34,24 @@ namespace Proiect_PAOO
         {
 
         }
+        
+        
+        private void panelAmenitati_Paint(object sender, PaintEventArgs e)
+        {
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        }
+
+        private void comboBoxDomeniu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelRiscuri_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             panelBunuri.Visible = false;
             panelAmenintari.Visible = false;
@@ -53,6 +71,7 @@ namespace Proiect_PAOO
                 case 2:
                     panelVulnerabilitati.Visible = true;
                     labelCurrent.Text = "Identificare vulnerabilitati";
+                    Home.currentPanel = panelVulnerabilitati;
                     break;
                 case 3:
                     panelRiscuri.Visible = true;
@@ -68,14 +87,14 @@ namespace Proiect_PAOO
             }
         }
 
-        private void panelAmenitati_Paint(object sender, PaintEventArgs e)
+        private void buttonPlus_Click(object sender, EventArgs e)
         {
-
+            currentPanel.addNewCell();
         }
 
-        private void comboBoxDomeniu_SelectedIndexChanged(object sender, EventArgs e)
+        private void buttonX_Click(object sender, EventArgs e)
         {
-
+            currentPanel.deleteCurrentCell();
         }
     }
 }
