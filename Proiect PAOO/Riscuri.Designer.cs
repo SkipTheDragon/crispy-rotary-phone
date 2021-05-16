@@ -31,11 +31,6 @@ namespace Proiect_PAOO
         {
             this.panelRiscuri = new System.Windows.Forms.Panel();
             this.dataGridViewRisc = new System.Windows.Forms.DataGridView();
-            this.NumeRisc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NivelulRiscului = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProbAparitie = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NaturaRiscului = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label36 = new System.Windows.Forms.Label();
             this.buttonRiscDiag = new System.Windows.Forms.Button();
             this.buttonRiscIdent = new System.Windows.Forms.Button();
@@ -100,42 +95,11 @@ namespace Proiect_PAOO
             // dataGridViewRisc
             // 
             this.dataGridViewRisc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRisc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NumeRisc,
-            this.dataGridViewTextBoxColumn1,
-            this.NivelulRiscului,
-            this.ProbAparitie,
-            this.NaturaRiscului});
             this.dataGridViewRisc.Location = new System.Drawing.Point(0, 287);
             this.dataGridViewRisc.Name = "dataGridViewRisc";
             this.dataGridViewRisc.RowTemplate.Height = 25;
             this.dataGridViewRisc.Size = new System.Drawing.Size(793, 109);
             this.dataGridViewRisc.TabIndex = 24;
-            // 
-            // NumeRisc
-            // 
-            this.NumeRisc.HeaderText = "Nume Risc";
-            this.NumeRisc.Name = "NumeRisc";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Bun";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // NivelulRiscului
-            // 
-            this.NivelulRiscului.HeaderText = "Nivelul Riscului";
-            this.NivelulRiscului.Name = "NivelulRiscului";
-            // 
-            // ProbAparitie
-            // 
-            this.ProbAparitie.HeaderText = "Probabilitatea de aparitie";
-            this.ProbAparitie.Name = "ProbAparitie";
-            // 
-            // NaturaRiscului
-            // 
-            this.NaturaRiscului.HeaderText = "Natura Riscului";
-            this.NaturaRiscului.Name = "NaturaRiscului";
             // 
             // label36
             // 
@@ -362,11 +326,6 @@ namespace Proiect_PAOO
 
         private System.Windows.Forms.Panel panelRiscuri;
         private System.Windows.Forms.DataGridView dataGridViewRisc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumeRisc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NivelulRiscului;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProbAparitie;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NaturaRiscului;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Button buttonRiscDiag;
         private System.Windows.Forms.Button buttonRiscIdent;

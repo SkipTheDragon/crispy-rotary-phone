@@ -16,12 +16,7 @@ namespace Proiect_PAOO
         public Home()
         {
             InitializeComponent();
-            comboBoxDomeniu.SelectedIndex = 0;
-            comboBoxImMax.SelectedIndex = 0;
-            comboBoxImMin.SelectedIndex = 0;
-            comboBoxNivMin.SelectedIndex = 0;
-            comboBoxNivMax.SelectedIndex = 0;
-            Home.currentPanel = panelVulnerabilitati;
+            Home.currentPanel = panelBunuri;
 
         }
 
@@ -71,11 +66,12 @@ namespace Proiect_PAOO
                 case 2:
                     panelVulnerabilitati.Visible = true;
                     labelCurrent.Text = "Identificare vulnerabilitati";
-                    Home.currentPanel = panelVulnerabilitati;
+                    /*Home.currentPanel = panelVulnerabilitati;*/
                     break;
                 case 3:
                     panelRiscuri.Visible = true;
                     labelCurrent.Text = "Identificare riscuri";
+                    /*Home.currentPanel = panelRiscuri;*/
                     break;
                 case 4:
                     panelTratare.Visible = true;
@@ -95,6 +91,11 @@ namespace Proiect_PAOO
         private void buttonX_Click(object sender, EventArgs e)
         {
             currentPanel.deleteCurrentCell();
+        }
+
+        private void panelVulnerabilitati_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

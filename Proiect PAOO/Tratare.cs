@@ -9,17 +9,12 @@ using System.Windows.Forms;
 
 namespace Proiect_PAOO
 {
-    public partial class Riscuri : UserControl
+    public partial class Tratare : DefaultPanel
     {
-        public Riscuri()
+        public Tratare()
         {
             InitializeComponent();
             fillTable();
-        }
-
-        private void Riscuri_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void fillTable()
@@ -34,7 +29,7 @@ namespace Proiect_PAOO
             {
                 con.OpenConnection();
                 //create a query for retrieving data in the database.
-                query = "SELECT * FROM `riscuri`";
+                query = "SELECT * FROM `contramasuri`";
                 //initialize new Sql commands
                 cmd = new MySqlCommand();
                 //hold the data to be executed.
@@ -48,7 +43,7 @@ namespace Proiect_PAOO
                 //refreshes the rows in specified range in the datasource.
                 da.Fill(dt);
 
-                dataGridViewRisc.DataSource = dt;
+                dataGridViewTrat.DataSource = dt;
             }
             catch (Exception ex)
             {
