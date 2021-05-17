@@ -11,7 +11,7 @@ namespace Proiect_PAOO
 {
     public partial class Vulnerabilitati : DefaultPanel
     {
-        public int editID;
+        public int editID = -1;
         public Vulnerabilitati()
         {
             InitializeComponent();
@@ -183,6 +183,8 @@ namespace Proiect_PAOO
             }
             fillTable();
         }
+
+
         override public void update() {
             MySqlDataAdapter da = new MySqlDataAdapter();
             Kernel con = new Kernel();
@@ -308,7 +310,6 @@ namespace Proiect_PAOO
             fillTable();
             comboBoxNivel.SelectedIndex = 0;
             FillSle();
-
         }
     }
 }

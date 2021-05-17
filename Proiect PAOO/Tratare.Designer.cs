@@ -30,13 +30,13 @@ namespace Proiect_PAOO
         private void InitializeComponent()
         {
             this.panelTratare = new System.Windows.Forms.Panel();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.dataGridViewTrat = new System.Windows.Forms.DataGridView();
             this.label47 = new System.Windows.Forms.Label();
             this.buttonTratSave = new System.Windows.Forms.Button();
             this.buttonTratStergere = new System.Windows.Forms.Button();
             this.buttonTratAdauga = new System.Windows.Forms.Button();
             this.textBoxTratAdauga = new System.Windows.Forms.TextBox();
-            this.textBoxTratContra = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.textBoxTratVul = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
@@ -61,13 +61,13 @@ namespace Proiect_PAOO
             // panelTratare
             // 
             this.panelTratare.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelTratare.Controls.Add(this.checkedListBox1);
             this.panelTratare.Controls.Add(this.dataGridViewTrat);
             this.panelTratare.Controls.Add(this.label47);
             this.panelTratare.Controls.Add(this.buttonTratSave);
             this.panelTratare.Controls.Add(this.buttonTratStergere);
             this.panelTratare.Controls.Add(this.buttonTratAdauga);
             this.panelTratare.Controls.Add(this.textBoxTratAdauga);
-            this.panelTratare.Controls.Add(this.textBoxTratContra);
             this.panelTratare.Controls.Add(this.label46);
             this.panelTratare.Controls.Add(this.textBoxTratVul);
             this.panelTratare.Controls.Add(this.label45);
@@ -90,6 +90,14 @@ namespace Proiect_PAOO
             this.panelTratare.Size = new System.Drawing.Size(793, 396);
             this.panelTratare.TabIndex = 9;
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(412, 78);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(368, 94);
+            this.checkedListBox1.TabIndex = 24;
+            // 
             // dataGridViewTrat
             // 
             this.dataGridViewTrat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -98,6 +106,7 @@ namespace Proiect_PAOO
             this.dataGridViewTrat.RowTemplate.Height = 25;
             this.dataGridViewTrat.Size = new System.Drawing.Size(793, 129);
             this.dataGridViewTrat.TabIndex = 23;
+            this.dataGridViewTrat.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTrat_CellContentDoubleClick);
             // 
             // label47
             // 
@@ -116,16 +125,18 @@ namespace Proiect_PAOO
             this.buttonTratSave.TabIndex = 21;
             this.buttonTratSave.Text = "Salvati";
             this.buttonTratSave.UseVisualStyleBackColor = true;
+            this.buttonTratSave.Click += new System.EventHandler(this.buttonTratSave_Click);
             // 
             // buttonTratStergere
             // 
             this.buttonTratStergere.AutoSize = true;
-            this.buttonTratStergere.Location = new System.Drawing.Point(673, 232);
+            this.buttonTratStergere.Location = new System.Drawing.Point(673, 235);
             this.buttonTratStergere.Name = "buttonTratStergere";
             this.buttonTratStergere.Size = new System.Drawing.Size(109, 25);
             this.buttonTratStergere.TabIndex = 20;
             this.buttonTratStergere.Text = "Stergere formular";
             this.buttonTratStergere.UseVisualStyleBackColor = true;
+            this.buttonTratStergere.Click += new System.EventHandler(this.buttonTratStergere_Click);
             // 
             // buttonTratAdauga
             // 
@@ -135,6 +146,7 @@ namespace Proiect_PAOO
             this.buttonTratAdauga.TabIndex = 19;
             this.buttonTratAdauga.Text = "Adauga";
             this.buttonTratAdauga.UseVisualStyleBackColor = true;
+            this.buttonTratAdauga.Click += new System.EventHandler(this.buttonTratAdauga_Click);
             // 
             // textBoxTratAdauga
             // 
@@ -142,15 +154,6 @@ namespace Proiect_PAOO
             this.textBoxTratAdauga.Name = "textBoxTratAdauga";
             this.textBoxTratAdauga.Size = new System.Drawing.Size(288, 23);
             this.textBoxTratAdauga.TabIndex = 18;
-            // 
-            // textBoxTratContra
-            // 
-            this.textBoxTratContra.Location = new System.Drawing.Point(412, 78);
-            this.textBoxTratContra.Multiline = true;
-            this.textBoxTratContra.Name = "textBoxTratContra";
-            this.textBoxTratContra.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxTratContra.Size = new System.Drawing.Size(367, 103);
-            this.textBoxTratContra.TabIndex = 17;
             // 
             // label46
             // 
@@ -263,6 +266,7 @@ namespace Proiect_PAOO
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(217, 23);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label39
             // 
@@ -315,7 +319,6 @@ namespace Proiect_PAOO
         private System.Windows.Forms.Button buttonTratStergere;
         private System.Windows.Forms.Button buttonTratAdauga;
         private System.Windows.Forms.TextBox textBoxTratAdauga;
-        private System.Windows.Forms.TextBox textBoxTratContra;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.TextBox textBoxTratVul;
         private System.Windows.Forms.Label label45;
@@ -333,5 +336,6 @@ namespace Proiect_PAOO
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }

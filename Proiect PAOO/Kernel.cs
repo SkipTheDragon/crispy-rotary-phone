@@ -18,7 +18,7 @@ namespace Proiect_PAOO
         public Kernel()
         {
             server = "localhost";
-            database = "paoo";
+            database = "asdasd";
             uid = "root";
             password = "";
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +

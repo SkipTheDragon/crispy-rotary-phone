@@ -37,5 +37,15 @@ namespace Proiect_PAOO
         {
 
         }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // DefaultPanel
+            // 
+            this.Name = "DefaultPanel";
+            this.ResumeLayout(false);
+        }
     }
 }

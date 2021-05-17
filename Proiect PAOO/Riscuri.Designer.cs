@@ -100,6 +100,8 @@ namespace Proiect_PAOO
             this.dataGridViewRisc.RowTemplate.Height = 25;
             this.dataGridViewRisc.Size = new System.Drawing.Size(793, 109);
             this.dataGridViewRisc.TabIndex = 24;
+            this.dataGridViewRisc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewRisc_CellContentClick);
+            this.dataGridViewRisc.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewRisc_CellContentDoubleClick);
             // 
             // label36
             // 
@@ -138,6 +140,7 @@ namespace Proiect_PAOO
             this.buttonRiscAnuleaza.TabIndex = 20;
             this.buttonRiscAnuleaza.Text = "Anuleaza";
             this.buttonRiscAnuleaza.UseVisualStyleBackColor = true;
+            this.buttonRiscAnuleaza.Click += new System.EventHandler(this.buttonRiscAnuleaza_Click);
             // 
             // buttonRiscSave
             // 

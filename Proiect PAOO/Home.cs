@@ -58,24 +58,28 @@ namespace Proiect_PAOO
                 case 0:
                     panelBunuri.Visible = true;
                     labelCurrent.Text = "Identificare bunuri";
+                    Home.currentPanel = panelBunuri;
                     break;
                 case 1:
                     panelAmenintari.Visible = true;
                     labelCurrent.Text = "Identificare amenintari";
+                    Home.currentPanel = panelAmenintari;
                     break;
                 case 2:
                     panelVulnerabilitati.Visible = true;
                     labelCurrent.Text = "Identificare vulnerabilitati";
-                    /*Home.currentPanel = panelVulnerabilitati;*/
+                    Home.currentPanel = panelVulnerabilitati;
                     break;
                 case 3:
                     panelRiscuri.Visible = true;
                     labelCurrent.Text = "Identificare riscuri";
-                    /*Home.currentPanel = panelRiscuri;*/
+                    Home.currentPanel = panelRiscuri;
                     break;
                 case 4:
                     panelTratare.Visible = true;
                     labelCurrent.Text = "Tratare riscuri si identificare contramasuri";
+                    Home.currentPanel = panelTratare;
+
                     break;
                 default:
                     panelBunuri.Visible = true;
