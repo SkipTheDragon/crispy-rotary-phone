@@ -106,7 +106,7 @@ namespace Proiect_PAOO
             this.dataGridViewTrat.RowTemplate.Height = 25;
             this.dataGridViewTrat.Size = new System.Drawing.Size(793, 129);
             this.dataGridViewTrat.TabIndex = 23;
-            this.dataGridViewTrat.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTrat_CellContentDoubleClick);
+            this.dataGridViewTrat.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTrat_CellDoubleClick);
             // 
             // label47
             // 
@@ -313,7 +313,7 @@ namespace Proiect_PAOO
         #endregion
 
         private System.Windows.Forms.Panel panelTratare;
-        private System.Windows.Forms.DataGridView dataGridViewTrat;
+        public System.Windows.Forms.DataGridView dataGridViewTrat;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Button buttonTratSave;
         private System.Windows.Forms.Button buttonTratStergere;

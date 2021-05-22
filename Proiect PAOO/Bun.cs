@@ -79,7 +79,7 @@ namespace Proiect_PAOO
             label4.Text = "Adaugare";
         }
 
-        private void dataGridViewBunuri_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridViewBunuri_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             clearForm();
             int rowindex = dataGridViewBunuri.CurrentCell.RowIndex;
@@ -124,7 +124,7 @@ namespace Proiect_PAOO
                 cmd.Parameters.Add("@impact_maxim", MySqlDbType.Int16).Value = Int16.Parse(comboBoxImMax.Text);
                 cmd.Parameters.Add("@domeniu_categorie", MySqlDbType.VarChar).Value = comboBoxDomeniu.Text;
                 cmd.Parameters.Add("@cost", MySqlDbType.Float).Value = float.Parse(textBoxBunCost.Text);
-                cmd.Parameters.Add("@cost_de_reducere", MySqlDbType.Float).Value = Int16.Parse(textBoxBunCostRed.Text);
+                cmd.Parameters.Add("@cost_de_reducere", MySqlDbType.Float).Value = float.Parse(textBoxBunCostRed.Text);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -164,7 +164,7 @@ namespace Proiect_PAOO
                 cmd.Parameters.Add("@impact_maxim", MySqlDbType.Int16).Value = Int16.Parse(comboBoxImMax.Text);
                 cmd.Parameters.Add("@domeniu_categorie", MySqlDbType.VarChar).Value = comboBoxDomeniu.Text;
                 cmd.Parameters.Add("@cost", MySqlDbType.Float).Value = float.Parse(textBoxBunCost.Text);
-                cmd.Parameters.Add("@cost_de_reducere", MySqlDbType.Float).Value = Int16.Parse(textBoxBunCostRed.Text);
+                cmd.Parameters.Add("@cost_de_reducere", MySqlDbType.Float).Value = float.Parse(textBoxBunCostRed.Text);
                 cmd.Parameters.Add("@cod_bun", MySqlDbType.Int16).Value = this.editID;
                 cmd.ExecuteNonQuery();
             }

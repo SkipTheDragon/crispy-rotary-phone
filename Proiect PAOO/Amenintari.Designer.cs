@@ -102,7 +102,7 @@ namespace Proiect_PAOO
             this.dataGridViewAmenintari.RowTemplate.Height = 25;
             this.dataGridViewAmenintari.Size = new System.Drawing.Size(793, 196);
             this.dataGridViewAmenintari.TabIndex = 13;
-            this.dataGridViewAmenintari.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAmenintari_CellContentClick);
+            this.dataGridViewAmenintari.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAmenintari_CellDoubleClick);
             // 
             // label19
             // 
@@ -244,7 +244,7 @@ namespace Proiect_PAOO
         private System.Windows.Forms.Panel panelAmenintari;
         private System.Windows.Forms.Button buttonAmenAnuleaza;
         private System.Windows.Forms.Button buttonAmenSave;
-        private System.Windows.Forms.DataGridView dataGridViewAmenintari;
+        public System.Windows.Forms.DataGridView dataGridViewAmenintari;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.CheckedListBox checkedListBoxBunuri;

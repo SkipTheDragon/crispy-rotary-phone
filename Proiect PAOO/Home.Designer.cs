@@ -46,6 +46,7 @@ namespace Proiect_PAOO
             this.toolStripMenuUnelForm = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuAjutor = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonExcel = new System.Windows.Forms.Button();
             this.buttonPrint = new System.Windows.Forms.Button();
             this.buttonX = new System.Windows.Forms.Button();
             this.buttonPlus = new System.Windows.Forms.Button();
@@ -101,7 +102,7 @@ namespace Proiect_PAOO
             this.toolStripMenuAjutor});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1083, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(966, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -206,6 +207,7 @@ namespace Proiect_PAOO
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.buttonExcel);
             this.panel1.Controls.Add(this.buttonPrint);
             this.panel1.Controls.Add(this.buttonX);
             this.panel1.Controls.Add(this.buttonPlus);
@@ -213,6 +215,16 @@ namespace Proiect_PAOO
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(955, 58);
             this.panel1.TabIndex = 1;
+            // 
+            // buttonExcel
+            // 
+            this.buttonExcel.Image = global::Proiect_PAOO.Properties.Resources.excel;
+            this.buttonExcel.Location = new System.Drawing.Point(144, 10);
+            this.buttonExcel.Name = "buttonExcel";
+            this.buttonExcel.Size = new System.Drawing.Size(38, 38);
+            this.buttonExcel.TabIndex = 3;
+            this.buttonExcel.UseVisualStyleBackColor = true;
+            this.buttonExcel.Click += new System.EventHandler(this.buttonExcel_Click);
             // 
             // buttonPrint
             // 
@@ -223,6 +235,7 @@ namespace Proiect_PAOO
             this.buttonPrint.Size = new System.Drawing.Size(38, 38);
             this.buttonPrint.TabIndex = 2;
             this.buttonPrint.UseVisualStyleBackColor = true;
+            this.buttonPrint.Click += new System.EventHandler(this.buttonPrint_Click);
             // 
             // buttonX
             // 
@@ -588,6 +601,7 @@ namespace Proiect_PAOO
             this.Controls.Add(this.panelRiscuri);
             this.Controls.Add(this.panelTratare);
             this.Controls.Add(this.panelAmenintari);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Home";
             this.Text = "Analiza si evaluarea riscurilor de securitate";
@@ -651,7 +665,7 @@ namespace Proiect_PAOO
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridViewBunuri;
+        public System.Windows.Forms.DataGridView dataGridViewBunuri;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nume;
         private System.Windows.Forms.DataGridViewTextBoxColumn ImpactMinim;
         private System.Windows.Forms.DataGridViewTextBoxColumn ImpactMaxim;
@@ -661,6 +675,7 @@ namespace Proiect_PAOO
         private Bun panelBunuri;
         private Amenintari panelAmenintari;
         private Tratare panelTratare;
+        private System.Windows.Forms.Button buttonExcel;
     }
 }
 

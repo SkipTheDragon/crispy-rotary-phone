@@ -159,12 +159,7 @@ namespace Proiect_PAOO
             fillTable();
         }
 
-        private void dataGridViewRisc_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridViewRisc_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridViewRisc_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int rowindex = dataGridViewRisc.CurrentCell.RowIndex;
             int columnindex = dataGridViewRisc.CurrentCell.ColumnIndex;

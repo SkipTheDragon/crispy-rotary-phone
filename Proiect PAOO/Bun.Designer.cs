@@ -294,7 +294,7 @@ namespace Proiect_PAOO
             this.dataGridViewBunuri.RowTemplate.Height = 25;
             this.dataGridViewBunuri.Size = new System.Drawing.Size(792, 226);
             this.dataGridViewBunuri.TabIndex = 0;
-            this.dataGridViewBunuri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBunuri_CellContentClick);
+            this.dataGridViewBunuri.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBunuri_CellDoubleClick);
             // 
             // Bun
             // 
@@ -333,6 +333,6 @@ namespace Proiect_PAOO
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridViewBunuri;
+        public System.Windows.Forms.DataGridView dataGridViewBunuri;
     }
 }

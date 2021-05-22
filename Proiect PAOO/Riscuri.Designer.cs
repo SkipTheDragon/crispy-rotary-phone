@@ -100,8 +100,7 @@ namespace Proiect_PAOO
             this.dataGridViewRisc.RowTemplate.Height = 25;
             this.dataGridViewRisc.Size = new System.Drawing.Size(793, 109);
             this.dataGridViewRisc.TabIndex = 24;
-            this.dataGridViewRisc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewRisc_CellContentClick);
-            this.dataGridViewRisc.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewRisc_CellContentDoubleClick);
+            this.dataGridViewRisc.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewRisc_CellDoubleClick);
             // 
             // label36
             // 
@@ -328,7 +327,7 @@ namespace Proiect_PAOO
         #endregion
 
         private System.Windows.Forms.Panel panelRiscuri;
-        private System.Windows.Forms.DataGridView dataGridViewRisc;
+        public System.Windows.Forms.DataGridView dataGridViewRisc;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Button buttonRiscDiag;
         private System.Windows.Forms.Button buttonRiscIdent;

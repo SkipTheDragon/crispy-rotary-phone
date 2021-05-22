@@ -1,10 +1,11 @@
-﻿using MySql.Data.MySqlClient;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Text;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Proiect_PAOO
@@ -119,7 +120,7 @@ namespace Proiect_PAOO
             }
         }
 
-        private void dataGridViewAmenintari_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridViewAmenintari_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int rowindex = dataGridViewAmenintari.CurrentCell.RowIndex;
             int columnindex = dataGridViewAmenintari.CurrentCell.ColumnIndex;
@@ -147,7 +148,7 @@ namespace Proiect_PAOO
             }
 
             this.editID = codAmen;
-            label13.Text = "Editare " + this.editID;
+            label13.Text = "Editare";
         }
 
         override public void insert()

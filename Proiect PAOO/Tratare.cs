@@ -99,12 +99,12 @@ namespace Proiect_PAOO
             }
         }
 
-        private void dataGridViewTrat_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridViewTrat_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int rowindex = dataGridViewTrat.CurrentCell.RowIndex;
             int columnindex = dataGridViewTrat.CurrentCell.ColumnIndex;
             int codVul = Int16.Parse(dataGridViewTrat.Rows[rowindex].Cells["cod_risc"].Value.ToString());
-            
+
             textBoxTratProb.Text = dataGridViewTrat.Rows[rowindex].Cells["prob_aparitie"].Value.ToString();
             textBox1.Text = dataGridViewTrat.Rows[rowindex].Cells["nume_risc"].Value.ToString();
             textBoxTratBun.Text = dataGridViewTrat.Rows[rowindex].Cells["nume_bun"].Value.ToString();

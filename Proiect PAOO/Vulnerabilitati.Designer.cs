@@ -219,7 +219,7 @@ namespace Proiect_PAOO
         #endregion
 
         private System.Windows.Forms.Panel panelVulnerabilitati;
-        private System.Windows.Forms.DataGridView dataGridViewVulnerabilitati;
+        public System.Windows.Forms.DataGridView dataGridViewVulnerabilitati;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Button buttonVulSave;
         private System.Windows.Forms.Button buttonVulAnuleaza;
