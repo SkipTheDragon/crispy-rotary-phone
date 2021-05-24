@@ -151,8 +151,8 @@ namespace Proiect_PAOO
                 {
                     wb.Worksheets.Add(dt, strHeader);
 
-                    wb.Worksheet(1).Cells("A1:C1").Style.Fill.BackgroundColor = XLColor.DarkGreen;
-                    for (int i = 1; i <= dt.Rows.Count; i++)
+                    //wb.Worksheet(1).Cells("A1:C1").Style.Fill.BackgroundColor = XLColor.DarkGreen;
+                    /*for (int i = 1; i <= dt.Rows.Count; i++)
                     {
                         string cellRange = string.Format("A{0}:C{0}", i + 1);
                         if (i % 2 != 0)
@@ -164,7 +164,7 @@ namespace Proiect_PAOO
                             wb.Worksheet(1).Cells(cellRange).Style.Fill.BackgroundColor = XLColor.Yellow;
                         }
 
-                    }
+                    }*/
                     wb.Worksheet(1).Columns().AdjustToContents();
 
                     wb.SaveAs(folderPath);

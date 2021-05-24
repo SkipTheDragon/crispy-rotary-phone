@@ -56,6 +56,8 @@ namespace Proiect_PAOO
                     else
                     {
                         MessageBox.Show("Date Gresite!");
+                        textBoxUser.Text = "";
+                        textBoxPass.Text = "";
                     }
                 }
                 catch (Exception ex)
